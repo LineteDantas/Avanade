@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate # validate | update | create | create-drop
+    properties:
+      javax.persistence.validation.mode: auto
+      hibernate:
+        format_sql: false
+springdoc:
+  override-with-generic-response: false
+
+
