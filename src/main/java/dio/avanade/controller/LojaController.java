@@ -10,6 +10,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/loja")
+@CrossOrigin(origins = "*")
 public class LojaController {
 
     private final LojaService lojaService;
